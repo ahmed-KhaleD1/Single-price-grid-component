@@ -1,0 +1,148 @@
+:root {
+    --moblie-width: 600px;
+    --cyan: hsl(179, 62%, 43%);
+    --bright-yellow: hsl(71, 73%, 54%);
+    --light-gray: hsl(204, 43%, 93%);
+    --grayish-blue: hsl(218, 22%, 67%);
+    --Karla-font: "Karla", serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--Karla-font);
+}
+
+body {
+    background-color: var(--light-gray);
+}
+
+.challenge {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.main-card {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 8px #888888;
+    height: 450px;
+    width: 600px;
+    overflow: hidden;
+}
+
+.community-section {
+    height: 50%;
+    width: 100%;
+    padding: 32px;
+}
+
+.community-section h3 {
+    color: var(--cyan);
+
+    font-weight: 700;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    
+}
+
+.yellow-paragraph {
+    color: var(--bright-yellow);
+    margin-bottom: 8px;
+}
+
+.gray-paragraph {
+    color: var(--grayish-blue);
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.subscription-section {
+    width: 50%;
+    height: 50%;
+    background-color: var(--cyan);
+    padding: 32px;
+}
+
+.subscription-section h4{
+    color: white;
+}
+
+.price{
+    color: white;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.price + span{
+    color: var(--grayish-blue);margin-left: 12px;
+    font-weight: 300;
+    font-size: 13px;
+}
+
+.subscription-section p{
+    color: white;
+    margin-top: 5px;
+    font-weight: 400;
+    font-size: 15px;
+}
+.subscription-section .btn{
+    background-color: var(--bright-yellow);
+    color: white;
+    padding: 1rem ;
+    margin-top: 1.5rem;
+    border-radius: 5px;
+    font-family: var(--montserrat-font);
+    font-weight: 700;
+   box-shadow: 0px 0px 8px #888888;
+    border: none;width: 100%;
+    cursor: pointer;
+}
+
+.why-us-section{
+    width: 50%;
+    height: 50%;
+    background-color: var(--cyan);
+    opacity: 0.8;
+    padding: 32px;   
+}
+
+.why-us-section h4{
+    color: white;
+}
+.why-us-section ul{
+    list-style: none;
+    color: white;
+    font-size: 15px;
+    opacity: 0.5;
+}
+
+@media screen and (max-width:575px){
+    .main-card{
+        display: flex;
+        flex-direction: column;height: auto;
+    
+        width: 375px;
+    } 
+
+    .subscription-section{
+        width:100%; height: 50%;
+        background-color: var(--cyan);
+        padding: 32px;
+    }
+
+    .why-us-section{
+        width:100%; height: 50%;
+    }
+    .row{
+        flex-direction: column;
+    }
+}
