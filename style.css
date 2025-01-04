@@ -1,5 +1,4 @@
 :root {
-    --moblie-width: 600px;
     --cyan: hsl(179, 62%, 43%);
     --bright-yellow: hsl(71, 73%, 54%);
     --light-gray: hsl(204, 43%, 93%);
@@ -23,7 +22,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .main-card {
@@ -128,8 +127,8 @@ body {
 @media screen and (max-width:575px){
     .main-card{
         display: flex;
-        flex-direction: column;height: auto;
-    
+        flex-direction: column;
+        height: auto;
         width: 375px;
     } 
 
